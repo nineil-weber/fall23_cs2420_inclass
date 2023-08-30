@@ -9,7 +9,7 @@ class Circle
 
     public:
         Circle();
-        Circle(double r);
+        Circle(T r);
         void setRadius(T r);
         T getArea();
         T getCircumference();
@@ -21,7 +21,7 @@ Circle<T>::Circle() {
 }
 
 template <class T>
-Circle<T>::Circle(double r){
+Circle<T>::Circle(T r){
     this->radius = r;
 }
 
