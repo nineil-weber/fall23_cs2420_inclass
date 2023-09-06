@@ -16,15 +16,16 @@ void smart_pointer()
     p->act();
     (*p).act();
 
-    // Init type 2
-    cout<<"[Init type 2]"<<endl;
-    unique_ptr<Task> tPtr(new Task());
-//    auto tPtr(new Task());
-    tPtr->act();
-    (*tPtr).act();
+//    // Init type 2
+//    cout<<"[Init type 2]"<<endl;
+//    unique_ptr<Task> tPtr(new Task());
+////    auto tPtr(new Task());
+//    tPtr->act();
+//    (*tPtr).act();
 
     // Call destructor automatically for both cases
 }
+
 
 void array_pointer()
 {
@@ -73,10 +74,10 @@ void copy_example_2()
 
 int main()
 {
-    smart_pointer();
+//    smart_pointer();
 //    array_pointer();
 //    move_fun();
 //    copy_example();
-//    copy_example_2();
+    copy_example_2();
     return 0;
 }

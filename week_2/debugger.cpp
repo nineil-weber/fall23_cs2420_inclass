@@ -11,8 +11,8 @@ class Debug{
 			while(i<=n)
 			{
 				sol=sol*i;
-				i--;
-//                i++; // sol
+//				i--;
+                i++; // sol
 			}
 			return sol;
 		}

@@ -19,10 +19,11 @@ void deref_pointers()
 {
     int var1 = 11;
     int var2 = 22;
-    int* iptr = &var1;
+    int* iptr;
+    iptr = &var1;
     cout << "var1: "<< var1 << ", *iptr: " << *iptr <<", iptr.address: " << iptr << endl;
-    iptr = &var2; // copy address location [Update Address]
-//    *iptr = var2; // copy address location [Update Value]
+//    iptr = &var2; // copy address location [Update Address]
+    *iptr = var2; // copy address location [Update Value]
     cout << "var1: " << var1 << ", var2: " << var2 << ", *iptr: " << *iptr <<", iptr.address: " << iptr<< endl;
 }
 
@@ -30,9 +31,10 @@ void pointer_change_value()
 {
     int num = 11;
     int* ptr = &num;
+    num = 2;
     cout << "num: " << num << ", *ptr: " << *ptr << ", ptr: " << ptr << endl;
-    *ptr = 53;
-    cout << "num: " << num << ", *ptr: " << *ptr << ", ptr: " << ptr <<  endl;
+//    *ptr = 53;
+//    cout << "num: " << num << ", *ptr: " << *ptr << ", ptr: " << ptr <<  endl;
 }
 
 void   passByVal(int num){ num = 2; }
@@ -79,10 +81,10 @@ void pointers2objects()
 
 int main()
 {
-    pointer_address();
+//    pointer_address();
 //    deref_pointers();
 //    pointer_change_value();
 //    passing_variables();
-//    pointers2objects();
+    pointers2objects();
     return 0;
 }
