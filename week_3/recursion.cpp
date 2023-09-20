@@ -2,6 +2,7 @@
 // Created by NilsMurrugarra-Llerena on 1/18/23.
 //
 #include<iostream>
+#include<limits.h>
 
 using namespace std;
 
@@ -141,12 +142,32 @@ void main_mystery()
     cout<<"r2: "<<r2<<endl;
 }
 
+int get_max(int A[], int size, int max)
+{
+    if(size == 0)
+        return max;
+    else
+        if (A[size-1] > max)
+            return get_max(A, size-1, A[size-1]);
+        else
+            return get_max(A, size-1, max);
+}
+
+void main_get_max()
+{
+//    int A[] = {2, 4, 7, 1, 6};
+    int A[] = {2, 10, 7, 15, -6};
+    int max = get_max(A, 5, INT_MIN);
+    cout<<"max: "<<max<<endl;
+}
+
 int main(void)
 {
-    main_fact();
+//    main_fact();
 //    main_fib();
 //    main_print();
 //    main_poscomp();
 //    main_mystery();
+    main_get_max();
     return 0;
 }
