@@ -16,5 +16,11 @@ set(CMAKE_CXX_STANDARD 14)
 ## Week 3
 #add_executable(recursion week_3/recursion.cpp)
 
-# Week 5
-add_executable(main week_5/main.cpp)
+## Week 5
+#add_executable(main week_5/main.cpp)
+
+# Week 7
+add_executable(main week_7/main.cpp)
+
+## Project
+#add_executable(project project/hangman.cpp)
