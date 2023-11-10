@@ -22,8 +22,11 @@ set(CMAKE_CXX_STANDARD 14)
 ### Week 7
 #add_executable(main week_7/main.cpp)
 
-# Week 10
-add_executable(main week_10/main.cpp)
+## Week 10
+#add_executable(main week_10/main.cpp)
+
+# Week 12
+add_executable(main week_12/main.cpp)
 
 ## Project
 #add_executable(project project/hangman.cpp)
